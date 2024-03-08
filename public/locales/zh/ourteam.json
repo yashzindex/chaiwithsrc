@@ -1,53 +1,53 @@
-[
-  {
-    "Ftitle": "我们的团队"
-  },
-  {
-    "id": "1",
-    "name": "Sharon",
-    "role": "联合创始人/业务拓展Head",
-    "imageSrc": "/images/T1.png"
-  },
-  {
-    "id": "2",
-    "name": "Sejun Park",
-    "role": "韩国业务主管",
-    "imageSrc": "/images/T2.png"
-  },
-  {
-    "id": "3",
-    "name": "AKU",
-    "role": "日本业务拓展与运营",
-    "imageSrc": "/images/T3.png"
-  },
-  {
-    "id": "4",
-    "name": "Jeongmin Kim",
-    "role": "韩国运营",
-    "imageSrc": "/images/T4.png"
-  },
-  {
-    "id": "5",
-    "name": "John",
-    "role": "东南亚运营",
-    "imageSrc": "/images/T5.png"
-  },
-  {
-    "id": "6",
-    "name": "Jia",
-    "role": "广告运营",
-    "imageSrc": "/images/T6.png"
-  },
-  {
-    "id": "7",
-    "name": "Yeppa",
-    "role": "士耳其运营&BD",
-    "imageSrc": "/images/T7.png"
-  },
-  {
-    "id": "8",
-    "name": "Adam",
-    "role": "全球业务协作Head",
-    "imageSrc": "/images/T8.png"
-  }
-]
+{
+  "Ftitle": "我们的团队",
+  "team": [
+    {
+      "id": "1",
+      "name": "Sharon",
+      "role": "联合创始人/业务拓展Head",
+      "imageSrc": "/images/T1.png"
+    },
+    {
+      "id": "2",
+      "name": "Sejun Park",
+      "role": "韩国业务主管",
+      "imageSrc": "/images/T2.png"
+    },
+    {
+      "id": "3",
+      "name": "AKU",
+      "role": "日本业务拓展与运营",
+      "imageSrc": "/images/T3.png"
+    },
+    {
+      "id": "4",
+      "name": "Jeongmin Kim",
+      "role": "韩国运营",
+      "imageSrc": "/images/T4.png"
+    },
+    {
+      "id": "5",
+      "name": "John",
+      "role": "东南亚运营",
+      "imageSrc": "/images/T5.png"
+    },
+    {
+      "id": "6",
+      "name": "Jia",
+      "role": "广告运营",
+      "imageSrc": "/images/T6.png"
+    },
+    {
+      "id": "7",
+      "name": "Yeppa",
+      "role": "士耳其运营&BD",
+      "imageSrc": "/images/T7.png"
+    },
+    {
+      "id": "8",
+      "name": "Adam",
+      "role": "全球业务协作Head",
+      "imageSrc": "/images/T8.png"
+    }
+  ]
+}

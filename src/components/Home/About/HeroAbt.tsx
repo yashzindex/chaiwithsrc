@@ -29,7 +29,7 @@ const HeroAbt = () => {
                   <h1>
                     {t("title")}
                     <span className="hero-title-span">{t("spanI")}</span>
-                    &nbsp;&&nbsp;
+                    &nbsp;
                     <span className="hero-title-span">{t("spanII")}</span>
                   </h1>
                 </div>

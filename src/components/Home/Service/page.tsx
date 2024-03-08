@@ -5,8 +5,11 @@ import Image from "next/image";
 import plus from "../../../../public/images/plus.svg";
 import minus from "../../../../public/images/minus.svg";
 import { accordionData, AccordionItem } from "@/ConstantData/accordionData";
+import { useTranslation } from "next-i18next";
 
 const Accordion = () => {
+  const { t } = useTranslation("service");
+  let serviceData = t("serviceData", { returnObjects: true });
   const [expandedIndex, setExpandedIndex] = useState<number | null>(0);
   const toggleAccordion = (index: number) => {
     if (expandedIndex === index) {
@@ -22,7 +25,7 @@ const Accordion = () => {
       >
         <div className="container mx-auto px-4">
           <div className="reguler-title mb-6 md:mb-8 lg:mb-10 xl:mb-12">
-            <h2>We Provide</h2>
+            <h2>{t("maintitle")}</h2>
           </div>
           <div className="relative">
             <div className="flex flex-col lg:flex-row justify-between">

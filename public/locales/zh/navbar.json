@@ -1,8 +1,28 @@
-[
-    {"navlink" : "关于"},
-    {"navlink" : "服务项目"},
-    {"navlink" : "客户"},
-    {"navlink" : "愿景"},
-    {"navlink" : "团队信息"},
-    {"navlink" : "调研"}
-]
+{
+    "navItem": [
+        {
+            "id": "1",
+            "navlink": "关于"
+        },
+        {
+            "id": "2",
+            "navlink": "服务项目"
+        },
+        {
+            "id": "3",
+            "navlink": "客户"
+        },
+        {
+            "id": "4",
+            "navlink": "愿景"
+        },
+        {
+            "id": "5",
+            "navlink": "团队信息"
+        },
+        {
+            "id": "6",
+            "navlink": "调研"
+        }
+    ]
+}

@@ -1,8 +1,28 @@
-[
-    {"navlink" : "ABOUT"},
-    {"navlink" : "SERVICE"},
-    {"navlink" : "CLIENT"},
-    {"navlink" : "VISION"},
-    {"navlink" : "TEAM"},
-    {"navlink" : "RESEARCH"}
-]
+{
+    "navItem": [
+        {
+            "id": "1",
+            "navlink": "ABOUT"
+        },
+        {
+            "id": "2",
+            "navlink": "SERVICE"
+        },
+        {
+            "id": "3",
+            "navlink": "CLIENT"
+        },
+        {
+            "id": "4",
+            "navlink": "VISION"
+        },
+        {
+            "id": "5",
+            "navlink": "TEAM"
+        },
+        {
+            "id": "6",
+            "navlink": "RESEARCH"
+        }
+    ]
+}

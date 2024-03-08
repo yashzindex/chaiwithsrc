@@ -1,5 +1,6 @@
-[   
-    { "maintitle" : "我们提供"},
+{
+  "maintitle": "我们提供",
+  "serviceData": [
     {
       "index": "01",
       "title": "前期咨询与研究",
@@ -34,7 +35,6 @@
         "second": "上币计划制定及上币推进",
         "third": "",
         "fourth": ""
-
       }
     },
     {
@@ -47,7 +47,6 @@
         "second": "商业模式了解",
         "third": "Telegram/Discord/Kakaotalk/Line/Whatsapp 等",
         "fourth": "Twitter/Ins/Youtube/Medium等"
-
       }
     },
     {
@@ -59,7 +58,7 @@
         "first": "来自中国、韩国、日本、欧洲、美洲、东南亚等地的KOL",
         "second": "多语言AMA, Space运营",
         "third": "KOL调研或项目研究",
-        "fourth":"Twitter/Telegram/Discord/Naverblog/Wechat传播与营销等"
+        "fourth": "Twitter/Telegram/Discord/Naverblog/Wechat传播与营销等"
       }
     },
     {
@@ -71,7 +70,7 @@
         "first": "项目赛道沟通",
         "second": "商业模式了解",
         "third": "营销方法选择",
-        "fourth":""
+        "fourth": ""
       }
     },
     {
@@ -83,7 +82,7 @@
         "first": "项目赛道沟通",
         "second": "商业模式了解",
         "third": "营销方法选择",
-        "fourth":""
+        "fourth": ""
       }
     },
     {
@@ -95,7 +94,7 @@
         "first": "项目赛道沟通",
         "second": "商业模式了解",
         "third": "营销方法选择",
-        "fourth":""
+        "fourth": ""
       }
     },
     {
@@ -107,7 +106,7 @@
         "first": "MeetUP举办",
         "second": "线下聚会",
         "third": "Party，酒会等活动",
-        "fourth":""
+        "fourth": ""
       }
     },
     {
@@ -119,8 +118,8 @@
         "first": "目标地区的法律法规咨询",
         "second": "目标地区证照办理等等",
         "third": "",
-        "fourth":""
+        "fourth": ""
       }
     }
   ]
-  
+}

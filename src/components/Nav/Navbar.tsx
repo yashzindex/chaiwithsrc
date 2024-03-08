@@ -6,8 +6,11 @@ import LanguageBtn from "../Buttons/DropDown/LanguageBtn";
 import MobileMenu from "./MobileMenu";
 import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
-import { navigationItems } from "@/ConstantData/navigationData";
+import { useTranslation } from "next-i18next";
 const Navbar: React.FC = () => {
+  const { t } = useTranslation("navbar");
+  let navItem = t("navItem", { returnObjects: true });
+  console.log(navItem);
   const [open, setOpen] = useState(false);
   const handleMobileMenuToggle = () => {
     setOpen(!open);
@@ -46,18 +49,23 @@ const Navbar: React.FC = () => {
               </button>
             </div>
             <ul className="hidden lg:flex space-x-5 lg:space-x-10 2xl:space-x-[50px]">
-              {navigationItems.map((item: any) => (
-                <li key={item.id}>
-                  <ScrollLink
-                    to={item.id}
-                    activeClass="active"
-                    spy={true}
-                    className={`cursor-pointer text-sm text-[#121113] hover:text-[#7C3AED] hover:border-b-[2px] hover:border-[#7C3AED] pb-1`}
-                  >
-                    {item.label}
-                  </ScrollLink>
-                </li>
-              ))}
+              {navItem &&
+                navItem.map((item: any) => {
+                  return (
+                    <>
+                      <li key={item.id}>
+                        <ScrollLink
+                          to={item.id}
+                          activeClass="active"
+                          spy={true}
+                          className={`cursor-pointer text-sm text-[#121113] hover:text-[#7C3AED] hover:border-b-[2px] hover:border-[#7C3AED] pb-1`}
+                        >
+                          {item.navlink}
+                        </ScrollLink>
+                      </li>{" "}
+                    </>
+                  );
+                })}
             </ul>
             <div className="hidden lg:flex items-center justify-end lg:flex-1 lg:w-0">
               <LanguageBtn />
@@ -71,3 +79,18 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
+
+{
+  /* {navigationItems.map((item: any) => (
+                <li key={item.id}>
+                  <ScrollLink
+                    to={item.id}
+                    activeClass="active"
+                    spy={true}
+                    className={`cursor-pointer text-sm text-[#121113] hover:text-[#7C3AED] hover:border-b-[2px] hover:border-[#7C3AED] pb-1`}
+                  >
+                    {item.label}
+                  </ScrollLink>
+                </li>
+              ))} */
+}

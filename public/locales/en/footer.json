@@ -1,11 +1,29 @@
 {
   "menu": [
-    { "title": "ABOUT" },
-    { "title": "SERVICE" },
-    { "title": "CLIENT" },
-    { "title": "VISION" },
-    { "title": "TEAM" },
-    { "title": "RESEARCH" }
+    {
+      "id": "1",
+      "title": "ABOUT"
+    },
+    {
+      "id": "2",
+      "title": "SERVICE"
+    },
+    {
+      "id": "3",
+      "title": "CLIENT"
+    },
+    {
+      "id": "4",
+      "title": "VISION"
+    },
+    {
+      "id": "5",
+      "title": "TEAM"
+    },
+    {
+      "id": "6",
+      "title": "RESEARCH"
+    }
   ],
   "copyright": {
     "text": "Chain with.com"

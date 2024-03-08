@@ -1,11 +1,29 @@
 {
   "menu": [
-    { "title": "关于" },
-    { "title": "服务项目" },
-    { "title": "客户" },
-    { "title": "愿景" },
-    { "title": "团队信息" },
-    { "title": "调研" }
+    {
+      "id": "1",
+      "title": "关于"
+    },
+    {
+      "id": "2",
+      "title": "服务项目"
+    },
+    {
+      "id": "3",
+      "title": "客户"
+    },
+    {
+      "id": "4",
+      "title": "愿景"
+    },
+    {
+      "id": "5",
+      "title": "团队信息"
+    },
+    {
+      "id": "6",
+      "title": "调研"
+    }
   ],
   "copyright": {
     "text": "Chain with.com"

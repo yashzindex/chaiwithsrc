@@ -1,4 +1,6 @@
-[   {"Ftitle" : "Our Team"},
+{
+  "Ftitle": "Our Team",
+  "team": [
     {
       "id": "1",
       "name": "Sharon",
@@ -48,3 +50,4 @@
       "imageSrc": "/images/T8.png"
     }
   ]
+}
