@@ -1,0 +1,126 @@
+[   
+    { "maintitle" : "我们提供"},
+    {
+      "index": "01",
+      "title": "前期咨询与研究",
+      "content": {
+        "head": "前期咨询与研究",
+        "text": "专业的项目专家为您提供前期咨询与推广计划沟通服务，包含",
+        "first": "项目赛道沟通",
+        "second": "商业模式了解",
+        "third": "营销方法选择",
+        "fourth": ""
+      }
+    },
+    {
+      "index": "02",
+      "title": "提升 & 优化",
+      "content": {
+        "head": "提升 & 优化",
+        "text": "",
+        "first": "项目赛道沟通",
+        "second": "商业模式了解",
+        "third": "营销方法选择",
+        "fourth": ""
+      }
+    },
+    {
+      "index": "03",
+      "title": "融资 & 上币咨询",
+      "content": {
+        "head": "融资 & 上币咨询",
+        "text": "",
+        "first": "融资咨询，资源对接",
+        "second": "上币计划制定及上币推进",
+        "third": "",
+        "fourth": ""
+
+      }
+    },
+    {
+      "index": "04",
+      "title": "社群与社交媒体建设",
+      "content": {
+        "head": "社群与社交媒体建设",
+        "text": "",
+        "first": "项目赛道沟通",
+        "second": "商业模式了解",
+        "third": "Telegram/Discord/Kakaotalk/Line/Whatsapp 等",
+        "fourth": "Twitter/Ins/Youtube/Medium等"
+
+      }
+    },
+    {
+      "index": "05",
+      "title": "Influencer 营销",
+      "content": {
+        "head": "Influencer 营销",
+        "text": "",
+        "first": "来自中国、韩国、日本、欧洲、美洲、东南亚等地的KOL",
+        "second": "多语言AMA, Space运营",
+        "third": "KOL调研或项目研究",
+        "fourth":"Twitter/Telegram/Discord/Naverblog/Wechat传播与营销等"
+      }
+    },
+    {
+      "index": "06",
+      "title": "B端合作伙伴链接",
+      "content": {
+        "head": "B端合作伙伴链接",
+        "text": "",
+        "first": "项目赛道沟通",
+        "second": "商业模式了解",
+        "third": "营销方法选择",
+        "fourth":""
+      }
+    },
+    {
+      "index": "07",
+      "title": "本地化服务",
+      "content": {
+        "head": "本地化服务",
+        "text": "",
+        "first": "项目赛道沟通",
+        "second": "商业模式了解",
+        "third": "营销方法选择",
+        "fourth":""
+      }
+    },
+    {
+      "index": "08",
+      "title": "定制营销策略",
+      "content": {
+        "head": "定制营销策略",
+        "text": "",
+        "first": "项目赛道沟通",
+        "second": "商业模式了解",
+        "third": "营销方法选择",
+        "fourth":""
+      }
+    },
+    {
+      "index": "09",
+      "title": "线下活动",
+      "content": {
+        "head": "线下活动",
+        "text": "",
+        "first": "MeetUP举办",
+        "second": "线下聚会",
+        "third": "Party，酒会等活动",
+        "fourth":""
+      }
+    },
+    {
+      "index": "10",
+      "title": "合规咨询",
+      "content": {
+        "head": "线下活动",
+        "text": "",
+        "first": "目标地区的法律法规咨询",
+        "second": "目标地区证照办理等等",
+        "third": "",
+        "fourth":""
+      }
+    }
+  ]
+  

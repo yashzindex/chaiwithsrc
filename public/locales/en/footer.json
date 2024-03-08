@@ -1,0 +1,13 @@
+{
+  "menu": [
+    { "title": "ABOUT" },
+    { "title": "SERVICE" },
+    { "title": "CLIENT" },
+    { "title": "VISION" },
+    { "title": "TEAM" },
+    { "title": "RESEARCH" }
+  ],
+  "copyright": {
+    "text": "Chain with.com"
+  }
+}

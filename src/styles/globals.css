@@ -2,32 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* Global font family declaration */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  html,
+  body {
+    font-family: 'pingfang_scregular', sans-serif;
+    font-weight: 400;
+    scroll-behavior: smooth;
+  }
+
+  li,
+  link,
+  a {
+    list-style-type: none;
+    text-decoration: none;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .hero-title {
+    @apply text-[#111827] text-[30px] leading-[36px] tracking-normal lg:text-[40px] 2xl:text-[70px] lg:leading-[54px] 2xl:leading-[84px];
+  }
+
+  .hero-title-span {
+    @apply text-[#7C3AED] text-[30px] leading-[36px] tracking-normal lg:text-[40px] 2xl:text-[70px] lg:leading-[54px] 2xl:leading-[84px];
+  }
+
+  .reguler-title {
+    @apply uppercase text-3xl text-[#121113] lg:text-[36px] xl:text-[50px] lg:leading-[42px] xl:leading-[60px] lg:tracking-tight xl:tracking-[-1.25px];
+  }
+
+  .accordion-head {
+    @apply text-[#121113] text-lg sm:text-2xl xl:text-3xl lg:leading-[30px] 2xl:text-[38px] 2xl:leading-[50px];
+  }
+
+  .content-head {
+    @apply text-[#121113] text-lg sm:text-[22px] md:text-xl xl:text-[28px] 2xl:text-[32px] leading-[normal] lg:leading-[26px] 2xl:leading-[32px];
+  }
+
+  .content-text {
+    @apply text-[#121113] text-base md:text-lg xl:text-2xl leading-normal 2xl:leading-10;
+  }
+
+  .member-name {
+    @apply text-[#7656D8] text-xl leading-[20px] py-[5px];
+  }
+
+  .white-heading {
+    @apply uppercase text-white text-3xl md:text-3xl lg:text-4xl 2xl:text-[50px] 2xl:tracking-[-1.25px];
+  }
+
+  .active {
+    @apply text-black border-b-[2px] border-[#7C3AED] pb-1;
+  }
+
+  .activeFooter {
+    @apply text-[#7C3AED] text-xs md:text-base leading-5;
+  }
+
+  .bg-black-timeline {
+    @apply rounded-2xl border-white border py-5 lg:px-4 lg:py-3 xl:px-6 xl:py-3 2xl:py-10 lg:pr-3 xl:pr-6 2xl:pr-12;
+  }
+
+  .bg-black-timeline-right {
+    @apply rounded-2xl border-white border py-5 lg:px-4 lg:py-3 xl:px-6 xl:py-3 2xl:py-10 lg:pl-8 xl:pl-8 2xl:pl-16;
+  }
+
+  .timeline-head {
+    @apply text-white text-lg md:text-xl leading-normal xl:text-[38px] xxl:text-[40px] xxl:leading-[42px] 2xl:text-[52px] lg:leading-normal xl:leading-[52px] mb-1 lg:mb-2 xl:mb-[10px];
+  }
+
+  .timeline-text {
+    @apply text-white text-base xl:text-xl 2xl:text-3xl leading-normal xxl:leading-[38px];
   }
 }

@@ -1,0 +1,15 @@
+{
+    "contact": {
+        "title": "CONTACT US",
+        "submitButtonText": "Submit",
+        "formLabels": {
+            "name": "Your Name",
+            "email": "Email",
+            "project": "Project Name",
+            "jobTitle": "Your Job Title"
+        },
+        "formPlaceholder": {
+            "description": "Please provide a brief description of your project and your requirements. Thank you!"
+        }
+    }
+}
