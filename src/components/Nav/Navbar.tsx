@@ -14,7 +14,6 @@ interface navI {
 const Navbar: React.FC = () => {
   const { t } = useTranslation("navbar");
   let navItem: navI[] = t("navItem", { returnObjects: true });
-  console.log(navItem);
   const [open, setOpen] = useState(false);
   const handleMobileMenuToggle = () => {
     setOpen(!open);
@@ -59,7 +58,7 @@ const Navbar: React.FC = () => {
                     <>
                       <li key={item.id}>
                         <ScrollLink
-                          to={item.id}
+                          to={item.link}
                           activeClass="active"
                           spy={true}
                           className={`cursor-pointer text-sm text-[#121113] hover:text-[#7C3AED] hover:border-b-[2px] hover:border-[#7C3AED] pb-1`}
@@ -83,18 +82,3 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
-
-{
-  /* {navigationItems.map((item: any) => (
-                <li key={item.id}>
-                  <ScrollLink
-                    to={item.id}
-                    activeClass="active"
-                    spy={true}
-                    className={`cursor-pointer text-sm text-[#121113] hover:text-[#7C3AED] hover:border-b-[2px] hover:border-[#7C3AED] pb-1`}
-                  >
-                    {item.label}
-                  </ScrollLink>
-                </li>
-              ))} */
-}

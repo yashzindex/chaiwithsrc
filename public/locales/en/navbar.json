@@ -2,27 +2,33 @@
     "navItem": [
         {
             "id": "1",
-            "navlink": "ABOUT"
+            "navlink": "ABOUT",
+            "link": "about"
         },
         {
             "id": "2",
-            "navlink": "SERVICE"
+            "navlink": "SERVICE",
+            "link": "service"
         },
         {
             "id": "3",
-            "navlink": "CLIENT"
+            "navlink": "CLIENT",
+            "link": "client"
         },
         {
             "id": "4",
-            "navlink": "VISION"
+            "navlink": "VISION",
+            "link": "vision"
         },
         {
             "id": "5",
-            "navlink": "TEAM"
+            "navlink": "TEAM",
+            "link": "team"
         },
         {
             "id": "6",
-            "navlink": "RESEARCH"
+            "navlink": "RESEARCH",
+            "link": "research"
         }
     ]
 }

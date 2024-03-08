@@ -32,7 +32,7 @@ const Timeline = () => {
                   <div className="bg-black-timeline bg-gradient-to-r from-black via-transparent to-black flex justify-center lg:justify-start">
                     <div className="text-center lg:text-start mt-2 lg:mt-0">
                       <div className="timeline-head">
-                        <h3>2000+</h3>
+                        <h3>3000+</h3>
                       </div>
                       <div>
                         <p className="timeline-text">{t("t1")}</p>

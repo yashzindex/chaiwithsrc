@@ -1,9 +1,9 @@
 import Navbar from "@/components/Nav/Navbar";
-import Footer from "@/components/Footer/page";
+import Footer from "@/components/Footer/FooterPage";
 import About from "@/components/Home/About/HeroAbt";
 import Timeline from "@/components/Home/Reasearch/Timeline";
 import Banner from "@/components/Home/Banner/BannnerPage";
-import Client from "@/components/Home/Client/page";
+import ClientPage from "@/components/Home/Client/ClientPage";
 import Service from "@/components/Home/Service/page";
 import OurTeam from "@/components/Home/Team/OurTeam";
 import Vision from "@/components/Home/Vision/VisionPage";
@@ -16,7 +16,7 @@ export default function Home() {
       <About />
       <Service />
       <Timeline />
-      <Client />
+      <ClientPage />
       <Vision />
       <OurTeam />
       <Banner />
@@ -44,9 +44,4 @@ export async function getStaticProps(context: any) {
       ])),
     },
   };
-}
-{
-  /* <h1>{t("blackBg")}</h1>
-      <button onClick={() => handleChnage("en")}>english</button>
-      <button onClick={() => handleChnage("zh")}>chinese</button> */
 }

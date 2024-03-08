@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 import C1 from "../../../../public/images/C1.png";
 import C2 from "../../../../public/images/C2.png";
 import C3 from "../../../../public/images/C3.png";
@@ -10,9 +11,9 @@ import C7 from "../../../../public/images/C7.png";
 import C8 from "../../../../public/images/C8.svg";
 import C9 from "../../../../public/images/C9.svg";
 import C10 from "../../../../public/images/C10.png";
-const page = () => {
+const ClientPage = () => {
   const imageSources = [C1, C2, C3, C4, C5, C6, C7, C8, C9, C10];
-
+  const { t } = useTranslation("common");
   return (
     <>
       <div
@@ -22,7 +23,7 @@ const page = () => {
         <div className="container px-4 mx-auto">
           <div className="max-w-[1400px] mx-auto">
             <div className="reguler-title mb-6 lg:mb-10 2xl:mb-12 text-center lg:enter">
-              <h2>Client</h2>
+              <h2>{t("cTitle")}</h2>
             </div>
             <div className="flex flex-wrap justify-center sm:justify-between items-center">
               {imageSources.map((src, index) => (
@@ -48,4 +49,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ClientPage;

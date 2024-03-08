@@ -2,27 +2,33 @@
   "menu": [
     {
       "id": "1",
-      "title": "ABOUT"
+      "title": "ABOUT",
+      "link": "about"
     },
     {
       "id": "2",
-      "title": "SERVICE"
+      "title": "SERVICE",
+      "link": "service"
     },
     {
       "id": "3",
-      "title": "CLIENT"
+      "title": "CLIENT",
+      "link": "client"
     },
     {
       "id": "4",
-      "title": "VISION"
+      "title": "VISION",
+      "link": "vision"
     },
     {
       "id": "5",
-      "title": "TEAM"
+      "title": "TEAM",
+      "link": "team"
     },
     {
       "id": "6",
-      "title": "RESEARCH"
+      "title": "RESEARCH",
+      "link": "research"
     }
   ],
   "copyright": {

@@ -23,7 +23,7 @@ const LanguageBtn = () => {
         <span>
           <Image src={global} alt="global" width={20} height={20} priority />
         </span>
-        &nbsp;&nbsp;&nbsp;English
+        &nbsp;&nbsp;&nbsp;Language
         <span className="max-w-4">
           <Image
             src={down}
@@ -37,7 +37,10 @@ const LanguageBtn = () => {
           <div className="w-full py-2 rounded-lg bg-white">
             <div
               className="py-2 px-4 text-sm text-black hover:bg-[#9983DB] hover:text-white flex items-center justify-between w-full duration-300"
-              onClick={() => handleChnage("en")}
+              onClick={() => {
+                handleChnage("en");
+                setIsOpen(!isOpen);
+              }}
             >
               English
               <span className="w-full max-w-4">
@@ -46,7 +49,10 @@ const LanguageBtn = () => {
             </div>
             <div
               className="py-2 px-4 text-sm text-black hover:bg-[#9983DB] hover:text-white flex items-center justify-between w-full duration-300"
-              onClick={() => handleChnage("zh")}
+              onClick={() => {
+                handleChnage("zh");
+                setIsOpen(!isOpen);
+              }}
             >
               简体中文
               <span className="w-full max-w-4">

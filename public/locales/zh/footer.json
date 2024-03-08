@@ -2,27 +2,33 @@
   "menu": [
     {
       "id": "1",
-      "title": "关于"
+      "title": "关于",
+      "link": "about"
     },
     {
       "id": "2",
-      "title": "服务项目"
+      "title": "服务项目",
+      "link": "service"
     },
     {
       "id": "3",
-      "title": "客户"
+      "title": "客户",
+      "link": "client"
     },
     {
       "id": "4",
-      "title": "愿景"
+      "title": "愿景",
+      "link": "vision"
     },
     {
       "id": "5",
-      "title": "团队信息"
+      "title": "团队信息",
+      "link": "team"
     },
     {
       "id": "6",
-      "title": "调研"
+      "title": "调研",
+      "link": "research"
     }
   ],
   "copyright": {
