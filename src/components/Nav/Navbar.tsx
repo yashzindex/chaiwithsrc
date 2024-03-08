@@ -7,9 +7,13 @@ import MobileMenu from "./MobileMenu";
 import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
+interface navI {
+  id: string;
+  navlink: string;
+}
 const Navbar: React.FC = () => {
   const { t } = useTranslation("navbar");
-  let navItem = t("navItem", { returnObjects: true });
+  let navItem: navI[] = t("navItem", { returnObjects: true });
   console.log(navItem);
   const [open, setOpen] = useState(false);
   const handleMobileMenuToggle = () => {

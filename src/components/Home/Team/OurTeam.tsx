@@ -1,10 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import teamData, { Person } from "@/ConstantData/teamData";
 import { useTranslation } from "next-i18next";
+interface TeamMember {
+  id: string;
+  name: string;
+  role: string;
+  imageSrc: string;
+}
 const OurTeam: React.FC = () => {
   const { t } = useTranslation("ourteam");
-  let team = t("team", { returnObjects: true });
+  let team: TeamMember[] = t("team", { returnObjects: true });
 
   return (
     <div
