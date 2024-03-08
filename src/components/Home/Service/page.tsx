@@ -43,7 +43,7 @@ const Accordion = () => {
                     return (
                       <>
                         <div
-                          key={item.index}
+                          key={item.title}
                           className={`flex items-center justify-between mb-3 md:mb-4 lxl:mb-6 cursor-pointer`}
                           onClick={() => toggleAccordion(item.index)}
                         >
@@ -81,65 +81,67 @@ const Accordion = () => {
                   })}
               </div>
               <div className="right w-full lg:max-w-[48%] 2xl:max-w-[750px] mt-4 md:mt-0">
-                {serviceData &&
-                  serviceData.map((item: any) => {
-                    return (
-                      <>
-                        <div
-                          key={item.index}
-                          className={`h-[100%] border-[#BCBABF] border rounded-2xl p-3 md:p-5 lg:p-8 ${
-                            expandedIndex === item.index ? "" : "hidden"
-                          }`}
-                        >
-                          <div className="mb-3 md:mb-4 lg:mb-6 flex flex-col content-head">
-                            <div className="flex flex-row flex-nowrap mb-4 xl:mb-5">
-                              <span className="mr-3 ">{item.index}</span>
-                              <span>{item.title}</span>
-                            </div>
-                            <div className="content-text">
-                              <p
-                                className={`${
-                                  item?.content?.text ? "" : "hidden"
-                                }`}
-                              >
-                                {item?.content?.text}
-                              </p>
-                              <ol className="p-4 md:p-5 lg:p-8">
-                                <li
-                                  className={`list-decimal ${
-                                    item.content.first ? "" : "hidden"
+                <div className="h-[100%] border-[#BCBABF] border rounded-2xl p-3 md:p-5 lg:p-8">
+                  {serviceData &&
+                    serviceData.map((item: any) => {
+                      return (
+                        <>
+                          <div
+                            key={item.title}
+                            className={`${
+                              expandedIndex === item.index ? "" : "hidden"
+                            }`}
+                          >
+                            <div className="mb-3 md:mb-4 lg:mb-6 flex flex-col content-head">
+                              <div className="flex flex-row flex-nowrap mb-4 xl:mb-5">
+                                <span className="mr-3 ">{item.index}</span>
+                                <span>{item.title}</span>
+                              </div>
+                              <div className="content-text">
+                                <p
+                                  className={`${
+                                    item?.content?.text ? "" : "hidden"
                                   }`}
                                 >
-                                  {item.content.first}
-                                </li>
-                                <li
-                                  className={`list-decimal ${
-                                    item.content.second ? "" : "hidden"
-                                  }`}
-                                >
-                                  {item?.content?.second}
-                                </li>
-                                <li
-                                  className={`list-decimal ${
-                                    item.content.third ? "" : "hidden"
-                                  }`}
-                                >
-                                  {item.content.third}
-                                </li>
-                                <li
-                                  className={`list-decimal ${
-                                    item.content.fourth ? "" : "hidden"
-                                  }`}
-                                >
-                                  {item.content.fourth}
-                                </li>
-                              </ol>
+                                  {item?.content?.text}
+                                </p>
+                                <ol className="p-4 md:p-5 lg:p-8">
+                                  <li
+                                    className={`list-decimal ${
+                                      item.content.first ? "" : "hidden"
+                                    }`}
+                                  >
+                                    {item.content.first}
+                                  </li>
+                                  <li
+                                    className={`list-decimal ${
+                                      item.content.second ? "" : "hidden"
+                                    }`}
+                                  >
+                                    {item?.content?.second}
+                                  </li>
+                                  <li
+                                    className={`list-decimal ${
+                                      item.content.third ? "" : "hidden"
+                                    }`}
+                                  >
+                                    {item.content.third}
+                                  </li>
+                                  <li
+                                    className={`list-decimal ${
+                                      item.content.fourth ? "" : "hidden"
+                                    }`}
+                                  >
+                                    {item.content.fourth}
+                                  </li>
+                                </ol>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </>
-                    );
-                  })}
+                        </>
+                      );
+                    })}
+                </div>
               </div>
             </div>
           </div>

@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
                 navItem.map((item: any) => {
                   return (
                     <>
-                      <li key={item.id}>
+                      <li key={item.navlink}>
                         <ScrollLink
                           to={item.link}
                           activeClass="active"

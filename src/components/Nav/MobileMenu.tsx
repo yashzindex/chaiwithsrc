@@ -72,6 +72,9 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, handleLinkClick }) => {
                 </ScrollLink>
               </li>
             ))}
+            <li className="mx-auto">
+              <LanguageBtn />
+            </li>
           </ul>
         </div>
       </div>
