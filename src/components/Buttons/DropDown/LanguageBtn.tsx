@@ -6,10 +6,8 @@ import down from "../../../../public/images/down.svg";
 import rightArror from "../../../../public/images/rightArror.svg";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
-interface DropdownProps {
-  onSelect: (selectedOption: string) => void;
-}
-const LanguageBtn: React.FC<DropdownProps> = () => {
+
+const LanguageBtn = () => {
   const { t } = useTranslation();
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
