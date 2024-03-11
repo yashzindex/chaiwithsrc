@@ -3,7 +3,6 @@ import React from "react";
 import Image from "next/image";
 import navLogo from "../../../public/images/navLogo.svg";
 import { Link as ScrollLink } from "react-scroll";
-import { navigationItems } from "@/ConstantData/navigationData";
 import LanguageBtn from "../Buttons/DropDown/LanguageBtn";
 import { useTranslation } from "next-i18next";
 interface MobileMenuProps {
