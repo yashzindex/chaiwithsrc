@@ -2,16 +2,22 @@
 import React from "react";
 import Image from "next/image";
 import navLogo from "../../../public/images/navLogo.svg";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { Link as ScrollLink } from "react-scroll";
 import { navigationItems } from "@/ConstantData/navigationData";
 import LanguageBtn from "../Buttons/DropDown/LanguageBtn";
+import { useTranslation } from "next-i18next";
 interface MobileMenuProps {
   open: boolean;
   handleLinkClick: any;
 }
+interface navI {
+  id: string;
+  navlink: string;
+  link: any;
+}
 const MobileMenu: React.FC<MobileMenuProps> = ({ open, handleLinkClick }) => {
+  const { t } = useTranslation("navbar");
+  let navItem: navI[] = t("navItem", { returnObjects: true });
   return (
     <div
       className={
@@ -55,20 +61,20 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, handleLinkClick }) => {
             </div>
           </div>
           <ul className="mt-5 w-full h-full flex flex-col gap-5 justify-center overflow-y-auto">
-            {navigationItems.map((item) => (
+            {navItem.map((item) => (
               <li
                 key={item.id}
                 className="w-full block text-center"
                 onClick={handleLinkClick}
               >
                 <ScrollLink
-                  to={item.id}
+                  to={item.link}
                   activeClass="active"
                   spy={true}
                   onClick={handleLinkClick}
                   className={`cursor-pointer text-xl text-[#121113] hover:text-[#7C3AED] hover:border-b-[2px] hover:border-[#7C3AED] pb-1`}
                 >
-                  {item.label}
+                  {t(item.navlink)}
                 </ScrollLink>
               </li>
             ))}
